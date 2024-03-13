@@ -1,27 +1,39 @@
 body{
-    background-color: #d8eff7;
+    background-color: #355f77;  
+    ;
+    font-family: 'Exo', sans-serif;
     /* border: red solid ; */
 }
 
-h1{
-    font-size: 30px;
+h1 {
+    font-size: 40px;
     font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgba(2, 95, 138, 0.831);
-    border: rgb(0, 255, 76) solid ;    
-}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff; 
+  
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  
+    
+    background-image: linear-gradient(to right,#666, #333, #666);
+    color: #fff; 
+    padding: 10px 20px; 
+  }
+  
 
 .principal{
+    /* border: rgba(0, 0, 0, 0.831) solid; */
     width: 100%;
     padding: 40px 0 10px 0;
 }
 
 #texto1{
     background: linear-gradient(  rgba(2, 95, 138, 0.831), #d8eff7 , rgba(2, 95, 138, 0.831));
+    
 
 }
 
 .principal #texto1{
+    border: rgba(0, 0, 0, 0.831) solid;
    width: 40%;
    height: 650px;
    text-align: center;
@@ -54,24 +66,108 @@ h2::before{
 }
 
 .botones{
-    width: 100%;
-    border: red solid;
+    position: relative;
+    width: 40%;
+    /* border: red solid; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
 }
 
 .botones .encriptar{
-    width: 10%;
+    width: 30%;
     height: 50px;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     background-color: #023f8ad4;
-    margin-left: 40%;
-
+    margin-left: 15%;
+    
 }
 
 .botones .desencriptar{
-    width: 10%;
+    width: 30%;
     height: 50px;
     border-radius: 15px;
     color:  #023f8ad4;
     background-color: #c4cdd9d4;
+    margin-left: 80px;
 }
+
+.mostrarMensaje{
+    width: 100%;
+    border: rgb(255, 251, 0) solid;   
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.principal .busqueda{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -35%;
+    width: 20%;
+    height: 40%;
+}
+
+.principal .a{
+    position: absolute;
+    margin-left: 73%;
+    font-size: 30px;
+    margin-top: -13%;
+    font-weight: bold;
+}
+
+.principal #texto2{
+    position: absolute;
+    margin-left: 67%;
+    width: 30%;
+    font-size: 25px;
+    margin-top: -11%;
+    background-color: #355f77;
+    color: #ffffff;
+    border: 1px solid #355f77;
+    border-radius: 5px;
+}
+
+#texto2::placeholder{
+   text-align: center;
+   color: #ffffff;
+}
+
+/*? FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right,#666, #333, #666);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer .contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .informacion p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer .informacion p:first-child {
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .footer .contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

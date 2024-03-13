@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png"> 
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
     <title>Encriptador De Texto</title>
 </head>
 <body>
@@ -19,13 +21,23 @@
         <!--? PAGE CONTENT (Contenido de la Pagina) -->
         <main class="principal">
             <!--? rigth seccion (Parte Principal derecha) -->
-            <textarea name="name1" id="texto1" cols="47" rows="8" required placeholder="Ingresa el texto aqui"></textarea>|
+            <textarea name="name1" id="texto1" cols="47" rows="8" required placeholder="Ingresa el texto aqui"></textarea>
            
             <!-- <label for="ingresarTexto"></label> -->
             <!-- <input type="text" id="ingresarTexto" class="encriptarDesencriptar" required placeholder="Ingresa una cadena en minusculas"> -->
 
             <!--! NOTA PARA EL USUARIO -->
             <h2>Ingresa una cadena en letras minusculas</h2>
+
+            <!-- **************************************** -->
+
+            <img src="img/search.jpg" class="busqueda" alt="mensaje no encontrado">
+            <h3 class="a">Ningun mensaje fue encontrado</h3>
+            <textarea name="name2" id="texto2" cols="47" rows=9" required placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+
+
+
+            <!-- **************************************** -->
 
             <!--? Buttons Section (Seccion de botones) -->
             <section class="botones">
@@ -34,24 +46,25 @@
             </section>
 
             <!--? left seccion (Parte derecha) -->
-            <section class="mostrarMensaje">
-                <img src="img/search.jpg" alt="mensaje no encontrado">
-                <h2>Ningun mensaje fue encontrado</h2>
-                <textarea name="name2" id="texto2" cols="47" rows="8" required placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
-            </section>
+            <!-- <section class="mostrarMensaje">
+                
+            </section> -->
 
         </main>
 
+        
         <!--? FOOTER -->
-     <footer>
-
-        <!-- <img src="img/logo.png" alt="Logo no disponible"> -->
-        <p>
-            &copy Autor: Marcos Espinoza Chagolla 
-        </p> 
-        <a href="https://github.com/MarcosEspinoza-9">GitHub: MarcosEspinoza-9</a>
-  
-      </footer>
-
+        <footer class="footer">
+            <div class="contenedor">
+              <div class="informacion">
+                <p>&copy; 2023 - Marcos Espinoza Chagolla</p>
+                <p>Diseño web profesional y creativo.</p>
+              </div>
+            </div>
+          </footer>
+          
+            <div class="context">
+        </div>
+          
 </body>
 </html>
