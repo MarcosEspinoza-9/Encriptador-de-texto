@@ -54,7 +54,7 @@ h1 {
 }
 
 h2{
-    color: rgb(94, 101, 101) ;
+    color: rgb(255, 255, 255) ;
     font-style: oblique;
     font-size: 20px;
     margin-left: 20%;
@@ -110,10 +110,11 @@ h2::before{
 
 .principal .a{
     position: absolute;
-    margin-left: 73%;
+    margin-left: 72%;
     font-size: 30px;
     margin-top: -13%;
     font-weight: bold;
+    color: #000000;
 }
 
 .principal #texto2{
@@ -136,26 +137,20 @@ h2::before{
 /*? FOOTER */
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-image: linear-gradient(to right,#666, #333, #666);
   color: #fff;
-  padding: 10px 0;
   text-align: center;
 }
 
 .footer .contenedor {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 144px;
+    max-width: 1000px;
+    align-items: center;
 }
 
 .footer .informacion p {
-  margin: 0;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.5;
 }
 
