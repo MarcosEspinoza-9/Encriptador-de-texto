@@ -17,16 +17,15 @@
         </head>
 
         <!--? PAGE CONTENT (Contenido de la Pagina) -->
-        <main>
+        <main class="principal">
             <!--? rigth seccion (Parte Principal derecha) -->
-            <label for="ingresarTexto">Ingresa una cadena en letras minusculas</label>
-            <textarea name="name1" id="texto1" cols="40" rows="8">Ingresa el texto aqui</textarea>
+            <textarea name="name1" id="texto1" cols="47" rows="8" required placeholder="Ingresa el texto aqui"></textarea>|
+           
+            <!-- <label for="ingresarTexto"></label> -->
             <!-- <input type="text" id="ingresarTexto" class="encriptarDesencriptar" required placeholder="Ingresa una cadena en minusculas"> -->
 
             <!--! NOTA PARA EL USUARIO -->
-            <div class="mensajeaviso">
-                Solo letras minusculas y sin acentos
-            </div>
+            <h2>Ingresa una cadena en letras minusculas</h2>
 
             <!--? Buttons Section (Seccion de botones) -->
             <section class="botones">
@@ -38,7 +37,7 @@
             <section class="mostrarMensaje">
                 <img src="img/search.jpg" alt="mensaje no encontrado">
                 <h2>Ningun mensaje fue encontrado</h2>
-                <textarea name="name2" id="texto2" cols="47" rows="8">Ingresa el texto que desees encriptar o desencriptar</textarea>
+                <textarea name="name2" id="texto2" cols="47" rows="8" required placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
             </section>
 
         </main>

@@ -1,8 +1,77 @@
 body{
     background-color: #d8eff7;
-    border: red solid ;
+    /* border: red solid ; */
 }
 
-main{
-    border: rgb(247, 239, 9) solid ;
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(2, 95, 138, 0.831);
+    border: rgb(0, 255, 76) solid ;    
+}
+
+.principal{
+    width: 100%;
+    padding: 40px 0 10px 0;
+}
+
+#texto1{
+    background: linear-gradient(  rgba(2, 95, 138, 0.831), #d8eff7 , rgba(2, 95, 138, 0.831));
+
+}
+
+.principal #texto1{
+   width: 40%;
+   height: 650px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 30px;
+   padding-top: 10px;
+   margin-left: 20%;
+   
+}
+
+#texto1::placeholder{
+    color: rgba(0, 0, 0, 0.831);
+}
+
+#texto1:hover{
+    font-size: 40px;
+    background: linear-gradient( 90deg  , #025f8ad4, #d8eff7 , rgba(2, 95, 138, 0.831));
+}
+
+h2{
+    color: rgb(94, 101, 101) ;
+    font-style: oblique;
+    font-size: 20px;
+    margin-left: 20%;
+    padding-top: 20px;
+}
+
+h2::before{
+    content: " ⚠ ";
+}
+
+.botones{
+    width: 100%;
+    border: red solid;
+}
+
+.botones .encriptar{
+    width: 10%;
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #023f8ad4;
+    margin-left: 40%;
+
+}
+
+.botones .desencriptar{
+    width: 10%;
+    height: 50px;
+    border-radius: 15px;
+    color:  #023f8ad4;
+    background-color: #c4cdd9d4;
 }
