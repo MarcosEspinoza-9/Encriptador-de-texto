@@ -1,10 +1,10 @@
 //* Recoge los datos del text area cuando se haya dado click en el boton de encriptar
 function encriptarclick(){
     var datosusuario = document.getElementById('texto1').value;
-    console.log(`Datos ingresados in incriptar: ${datosusuario}`);
+    console.log(`Datos ingresados a encriptar: ${datosusuario}`);
 
 
-    var firstletter_A = "ai";
+    var firstletter_A = "ay";
     var firstletter_E = "enter";
     var firstletter_I = "imes";
     var firstletter_O = "ober";
@@ -26,13 +26,10 @@ function encriptarclick(){
             console.log('letra actual:', palabraencriptada);
        
     }
-
-
 }
 
 
 function actualizarPagina() {
-    // Código para actualizar el contenido de la página
-    window.location.reload(); // Recargar la página
+    window.location.reload(); //* Recargar la página
   }
   
