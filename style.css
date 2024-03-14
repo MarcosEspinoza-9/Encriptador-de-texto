@@ -118,7 +118,7 @@ h2::before{
 }
 
 .principal #texto2{
-    position: absolute;
+    position: relative;
     margin-left: 67%;
     width: 30%;
     font-size: 20px;
@@ -138,31 +138,11 @@ h2::before{
 
 .footer {
   width: 100%;
+  height: 150px;
+  font-size: 25px;
+  padding-top: 70px;
   background-image: linear-gradient(to right,#666, #333, #666);
   color: #fff;
   text-align: center;
+  /* border: yellow solid; */
 }
-
-.footer .contenedor {
-    height: 144px;
-    max-width: 1000px;
-    align-items: center;
-}
-
-.footer .informacion p {
-  font-size: 30px;
-  line-height: 1.5;
-}
-
-.footer .informacion p:first-child {
-  font-weight: bold;
-}
-
-
-@media (max-width: 768px) {
-  .footer .contenedor {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
