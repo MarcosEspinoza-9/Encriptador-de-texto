@@ -35,7 +35,7 @@ h1 {
 .principal #texto1{
     border: rgba(0, 0, 0, 0.831) solid;
    width: 40%;
-   height: 650px;
+   height: 350px;
    text-align: center;
    font-weight: bold;
    font-size: 30px;
@@ -48,10 +48,18 @@ h1 {
     color: rgba(0, 0, 0, 0.831);
 }
 
-#texto1:hover{
+#texto1:hover {
+    transition: 3s;
     font-size: 40px;
-    background: linear-gradient( 90deg  , #025f8ad4, #d8eff7 , rgba(2, 95, 138, 0.831));
-}
+    background: linear-gradient(90deg, #025f8ad4, #d8eff7, rgba(2, 95, 138, 0.831));
+  }
+
+  #texto1:not(hover) {
+    transition: 3s;
+    font-size: 40px;
+    background: linear-gradient(90deg, #025f8ad4, #d8eff7, rgba(2, 95, 138, 0.831));
+  }
+  
 
 h2{
     color: rgb(255, 255, 255) ;
@@ -65,23 +73,25 @@ h2::before{
     content: " ⚠ ";
 }
 
-.botones{
-    position: relative;
+.botones {
+    position: absolute;
     width: 40%;
     /* border: red solid; */
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 20%;
+    /* border: #fff solid; */
+    margin-top: -180px;
 }
 
-.botones .encriptar{
+.botones .encriptar  {
     width: 30%;
     height: 50px;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     background-color: #023f8ad4;
     margin-left: 15%;
-    
+    margin-bottom: 10px;
 }
 
 .botones .desencriptar{
@@ -91,6 +101,15 @@ h2::before{
     color:  #023f8ad4;
     background-color: #c4cdd9d4;
     margin-left: 80px;
+}
+
+.reinicia{
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #023f8ad4;
+    margin-left: 220px;
 }
 
 .mostrarMensaje{
@@ -103,16 +122,16 @@ h2::before{
 .principal .busqueda{
     position: absolute;
     margin-left: 73%;
-    margin-top: -30%;
+    margin-top: -27%;
     width: 20%;
     height: 40%;
 }
 
-.principal .a{
+.principal #cambioEstado{
     position: absolute;
-    margin-left: 73%;
-    font-size: 30px;
-    margin-top: -8.5%;
+    margin-left: 70%;
+    font-size: 26px;
+    margin-top: -5%;
     font-weight: bold;
     color: #000000;
 }
@@ -122,7 +141,7 @@ h2::before{
     margin-left: 67%;
     width: 30%;
     font-size: 20px;
-    margin-top: -7%;
+    margin-top: -3%;
     background-color: #355f77;
     color: #ffffff;
     border: 1px solid #355f77;
@@ -138,7 +157,7 @@ h2::before{
 
 .footer {
   width: 100%;
-  height: 150px;
+  height: 30px;
   font-size: 25px;
   padding-top: 70px;
   background-image: linear-gradient(to right,#666, #333, #666);

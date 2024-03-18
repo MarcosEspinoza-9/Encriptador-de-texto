@@ -27,12 +27,12 @@
             <!-- <input type="text" id="ingresarTexto" class="encriptarDesencriptar" required placeholder="Ingresa una cadena en minusculas"> -->
 
             <!--! NOTA PARA EL USUARIO -->
-            <h2>Ingresa una cadena en letras minusculas</h2>
+            <h2 id="estado">Ingresa una cadena en letras minusculas</h2>
 
             <!-- **************************************** -->
 
             <img src="img/search.jpg" class="busqueda" alt="mensaje no encontrado">
-            <h3 class="a">Ningun mensaje fue encontrado</h3>
+            <h3 id="cambioEstado">Ningun mensaje fue encontrado</h3>
             <textarea name="name2" id="texto2" cols="47" rows=9" required placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
 
 
@@ -42,7 +42,7 @@
             <!--? Buttons Section (Seccion de botones) -->
             <section class="botones">
                 <input type="button" onclick="encriptarclick()" value="Encriptar" class="encriptar">
-                <input type="submit" onclick="" value="Desencriptar" class="desencriptar">
+                <input type="button" onclick="" value="Desencriptar" class="desencriptar">
                 <input type="button" onclick="actualizarPagina()" value="Reiniciar" class="reinicia">
             </section>
 
